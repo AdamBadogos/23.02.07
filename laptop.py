@@ -10,7 +10,7 @@ for i in file:
 
 del file_data [0]
 
-
+print(len(file_data))
 
 
 
