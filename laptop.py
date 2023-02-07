@@ -32,17 +32,18 @@ for i in range(len(file_data)):
 
 print("Merevlemez méreteinek átlaga: ",round(mer/Mdb,2))
 
+kereses=1000
 nincs=0
 
 for i in range(len(file_data)):
-    if(kereses == file_data[i][1]):
+    if(kereses == file_data[i][3]):
         print(file_data[i][0]+"\t"+str(file_data[i][1])+"\t"+file_data[i][2]+"\t"+file_data[i][3]+"\n")
     else:
         nincs+=1
 
 
 if nincs==len(file_data):
-    print("Nincs ilyen mezszám!")
+    print("Nincs 1TB-s merevlemez!")
 
 
 
