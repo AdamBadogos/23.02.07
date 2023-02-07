@@ -22,7 +22,27 @@ for i in range(len(file_data)):
     file_data[i][1]=float(csere)
 
 print(file_data)
-print("Készülékek száma:",len(file_data))
+
+mer=0
+Mdb=0
+
+for i in range(len(file_data)):
+    mer+=int(file_data[i][3])
+    Mdb+=1
+
+print("Merevlemez méreteinek átlaga: ",round(mer/Mdb,2))
+
+nincs=0
+
+for i in range(len(file_data)):
+    if(kereses == file_data[i][1]):
+        print(file_data[i][0]+"\t"+str(file_data[i][1])+"\t"+file_data[i][2]+"\t"+file_data[i][3]+"\n")
+    else:
+        nincs+=1
+
+
+if nincs==len(file_data):
+    print("Nincs ilyen mezszám!")
 
 
 
