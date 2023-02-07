@@ -51,3 +51,23 @@ for i in range(len(file_data)):
         nagy = file_data[i][1]
 
 print("Legnagyobb kijelzőméret:",nagy)
+
+gb1=0
+gb2=0
+gb3=0
+gb4=0
+for i in range(len(file_data)):
+    if file_data[i][2]=='4096':
+        gb4 += 1
+    elif file_data[i][2]=='3072':
+        gb3 += 1
+    elif file_data[i][2]=='2048':
+        gb2 += 1
+    elif file_data[i][2]=='1024':
+        gb1 += 1
+    
+
+print("1GB-os memóriák száma:",gb1)
+print("2GB-os memóriák száma:",gb2)
+print("3GB-os memóriák száma:",gb3)
+print("4GB-os memóriák száma:",gb4)
