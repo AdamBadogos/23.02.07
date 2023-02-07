@@ -22,16 +22,7 @@ for i in range(len(file_data)):
     file_data[i][1]=float(csere)
 
 print(file_data)
-
-mer=0
-Mdb=0
-
-for i in range(len(file_data)):
-    mer+=int(file_data[i][3])
-    Mdb+=1
-
-print("Merevlemez méreteinek átlaga: ",round(mer/Mdb,2))
-
+print("Készülékek száma:",len(file_data))
 
 
 
