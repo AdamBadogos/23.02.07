@@ -10,7 +10,6 @@ for i in file:
 
 del file_data [0]
 
-print("Készülékek száma:",len(file_data))
 
 for i in range(len(file_data)):
     csere=''
@@ -22,6 +21,7 @@ for i in range(len(file_data)):
     file_data[i][1]=float(csere)
 
 print(file_data)
+print("Készülékek száma:",len(file_data))
 
 mer=0
 Mdb=0
