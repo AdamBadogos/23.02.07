@@ -10,7 +10,7 @@ for i in file:
 
 del file_data [0]
 
-print(len(file_data))
+print("Készülékek száma:",len(file_data))
 
 for i in range(len(file_data)):
     csere=''
