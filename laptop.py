@@ -12,8 +12,16 @@ del file_data [0]
 
 print(len(file_data))
 
+for i in range(len(file_data)):
+    csere=''
+    for j in range(len(file_data[i][1])):
+        if file_data[i][1][j]==',':
+            csere+='.'
+        else:
+            csere+=file_data[i][1][j]
+    file_data[i][1]=float(csere)
 
-
+print(file_data)
 
 
 
