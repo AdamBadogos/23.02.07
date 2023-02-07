@@ -1,1 +1,1 @@
-asd
+f=open("gep.txt","r")
