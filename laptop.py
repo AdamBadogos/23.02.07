@@ -1,4 +1,4 @@
-f=open("gep.txt","r")
+file=open("gep.txt","r")
 
 file_data=[]
 
