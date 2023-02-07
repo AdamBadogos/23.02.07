@@ -45,13 +45,9 @@ for i in range(len(file_data)):
 if nincs==len(file_data):
     print("Nincs 1TB-s merevlemez!")
 
+nagy=0
+for i in range(len(file_data)):
+    if nagy < file_data[i][1]:
+        nagy = file_data[i][1]
 
-
-
-
-
-
-
-
-
-
+print("Legnagyobb kijelzőméret:",nagy)
